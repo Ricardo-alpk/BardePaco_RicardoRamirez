@@ -17,7 +17,7 @@
 * **Navegación:** Flutter Material Navigation
 * **Gestión de Estado:** `setState` local combinado con ViewModels para la lógica.
 
-## 📸 Capturas
+## Capturas
 
 ![repository](screenshots/repository.png)
 
