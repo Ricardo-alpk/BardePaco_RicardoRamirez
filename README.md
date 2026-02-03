@@ -1,23 +1,25 @@
-# paco_bar - Ricardo Ramirez
-A new Flutter project.
+# Paco Bar 
 
-Lo primero es haber subido el proyecto a github:
+**Paco Bar** es una aplicación móvil desarrollada en Flutter destinada a la gestión ágil de pedidos en bares y restaurantes. Utiliza una arquitectura limpia basada en MVVM (Model-View-ViewModel) para separar la lógica de negocio de la interfaz de usuario.
+
+## Características Principales
+
+* **Gestión de Pedidos:** Creación de nuevos pedidos asignados a mesas específicas.
+* **Selección de Productos:** Interfaz intuitiva para añadir o quitar productos (tapas, bebidas, platos) con control de cantidades.
+* **Resumen de Cuenta:** Cálculo automático del total de productos y precio total en tiempo real.
+* **Listado de Pedidos:** Vista general de todos los pedidos activos en el local.
+
+## Tecnologías Usadas
+
+* **Lenguaje:** Dart (SDK 3.9.2)
+* **Framework:** Flutter
+* **Arquitectura:** MVVM (Model - View - ViewModel)
+* **Navegación:** Flutter Material Navigation
+* **Gestión de Estado:** `setState` local combinado con ViewModels para la lógica.
+
+## Capturas
 
 ![repository](screenshots/repository.png)
 
-Nos aseguramos de activar las wikis:
-
-![wikiButton](screenshots/wikiButton.png)
-
-Y vemos que disponemos ahora del apartado "WIKI" en nuestro proyecto.
-
-![panel](screenshots/wikiPanel.png)
-
-# Información acerca del Proyecto:
-
-## Nombre: 
-## paco_bar
-
-## Descripción:
-
-paco_bar es una aplicación destinada a ayudar a gestianr los pedidos a los bares que se dispongan a usarla, la arquitectura MVVM (ModelView-ViewModel)
+---
+*Desarrollado por Ricardo Ramirez*
