@@ -23,5 +23,7 @@ https://docs.flutter.dev/
 
 ![repository](screenshots/repository.png)
 
+![wiki](screenshots/wikiPanel.png)
+
 ---
 *Desarrollado por Ricardo Ramirez*
