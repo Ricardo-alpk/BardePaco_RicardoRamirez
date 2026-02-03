@@ -3,6 +3,10 @@ import '../viewmodels/crear_pedido_vm.dart';
 import '../models/item_pedido.dart';
 import 'seleccionar_productos_pagina.dart';
 
+/// Pantalla de formulario para iniciar un nuevo pedido.
+///
+/// Permite al usuario introducir el nombre de la mesa y navegar a
+/// [SeleccionarProductosPagina] para añadir items.
 class CrearPedidoPagina extends StatefulWidget {
   const CrearPedidoPagina({super.key});
 
@@ -13,6 +17,7 @@ class CrearPedidoPagina extends StatefulWidget {
 }
 
 class _CrearPedidoPaginaState extends State<CrearPedidoPagina> {
+  /// ViewModel que mantiene el estado temporal del pedido en construcción.
   final CrearPedidoVm vm = CrearPedidoVm();
   final TextEditingController controlador = TextEditingController();
 
@@ -22,6 +27,7 @@ class _CrearPedidoPaginaState extends State<CrearPedidoPagina> {
     super.dispose();
   }
 
+  /// Navega a la pantalla de selección de productos pasando los items actuales.
   Future<void> irASeleccionar() async {
     final resultado = await Navigator.push(
       context,
@@ -45,6 +51,7 @@ class _CrearPedidoPaginaState extends State<CrearPedidoPagina> {
     }
   }
 
+  /// Navega a la pantalla de resumen solo si el pedido es válido.
   Future<void> verResumen() async {
     if (!vm.puedeGuardar) {
       ScaffoldMessenger.of(context).showSnackBar(
@@ -62,6 +69,7 @@ class _CrearPedidoPaginaState extends State<CrearPedidoPagina> {
     );
   }
 
+  /// Finaliza la creación del pedido y retorna el objeto [Pedido] a la pantalla anterior.
   void guardar() {
     if (!vm.puedeGuardar) {
       ScaffoldMessenger.of(context).showSnackBar(

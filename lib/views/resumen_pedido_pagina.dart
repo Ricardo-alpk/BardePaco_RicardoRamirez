@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import '../models/pedido.dart';
 
+/// Pantalla de solo lectura que muestra el detalle de un [Pedido].
+///
+/// Recibe el objeto pedido como argumento y desglosa sus items y totales.
 class ResumenPedidoPagina extends StatelessWidget {
   final Pedido pedido;
 

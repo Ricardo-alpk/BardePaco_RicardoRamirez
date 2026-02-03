@@ -1,6 +1,14 @@
+/// Representa un producto disponible en la carta del bar.
+/// 
+/// Contiene la información inmutable del producto: [id], [nombre] y [precio].
 class Producto {
+  /// Identificador único del producto.
   final String id;
+  
+  /// Nombre descriptivo del producto (ej: "Coca-Cola").
   final String nombre;
+  
+  /// Precio unitario del producto en euros.
   final double precio;
 
   const Producto({
@@ -9,6 +17,9 @@ class Producto {
     required this.precio,
   });
 
+  /// Lista estática que simula la base de datos de productos disponibles.
+  /// 
+  /// Se utiliza para poblar la vista de selección de productos.
   static const List<Producto> cartita = [
     Producto(id: '1', nombre: 'caña', precio: 1.20),
     Producto(id: '2', nombre: 'pincho de tortilla', precio: 1.60),

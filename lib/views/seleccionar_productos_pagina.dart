@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import '../viewmodels/seleccionar_productos.dart';
 import '../models/item_pedido.dart';
 
+/// Pantalla que muestra la lista de productos disponibles para añadir al pedido.
+///
+/// Permite incrementar o decrementar la cantidad de cada producto.
+/// Recibe [itemsIniciales] si se está editando una selección previa.
 class SeleccionarProductosPagina extends StatefulWidget {
   final List<ItemPedido> itemsIniciales;
 
@@ -30,6 +34,7 @@ class _SeleccionarProductosPaginaState extends State<SeleccionarProductosPagina>
     }
   }
 
+  /// Retorna la lista de items seleccionados a la pantalla anterior.
   void confirmar() {
     Navigator.pop(context, vm.construirItems());
   }

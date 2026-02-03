@@ -1,7 +1,13 @@
 import 'Producto.dart';
 
+/// Representa una línea dentro de un pedido.
+/// 
+/// Vincula un [Producto] específico con la [cantidad] solicitada.
+
 class ItemPedido {
+  /// El producto seleccionado de la carta.
   final Producto producto;
+  /// Número de unidades solicitadas de este producto.
   final int cantidad;
 
   const ItemPedido({
@@ -9,6 +15,7 @@ class ItemPedido {
     required this.cantidad,
   });
 
+  /// Calcula el precio total de esta línea (Precio unitario * Cantidad).
   double get subtotal {
     return producto.precio * cantidad;
   }
