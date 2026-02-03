@@ -71,6 +71,7 @@ class _SeleccionarProductosPaginaState extends State<SeleccionarProductosPagina>
                           });
                         },
                         icon: const Icon(Icons.remove),
+                        tooltip: "Disminuir cantidad", //Tooltip
                       ),
                       Text("$cantidad"),
                       IconButton(
@@ -80,6 +81,7 @@ class _SeleccionarProductosPaginaState extends State<SeleccionarProductosPagina>
                           });
                         },
                         icon: const Icon(Icons.add),
+                        tooltip: "Aumentar Cantidad", //Tooltip
                       ),
                     ],
                   ),

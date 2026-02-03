@@ -74,6 +74,7 @@ class _InicioPaginaState extends State<InicioPagina> {
         onPressed: () {
           nuevoPedido();
         },
+        tooltip: 'Crear nuevo pedido', //Tooltip
         child: const Icon(Icons.add),
       ),
     );
