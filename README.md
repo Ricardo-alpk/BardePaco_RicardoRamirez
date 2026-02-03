@@ -12,7 +12,9 @@
 ## Tecnologías Usadas
 
 * **Lenguaje:** Dart (SDK 3.9.2)
+https://dart.dev/docs
 * **Framework:** Flutter
+https://docs.flutter.dev/
 * **Arquitectura:** MVVM (Model - View - ViewModel)
 * **Navegación:** Flutter Material Navigation
 * **Gestión de Estado:** `setState` local combinado con ViewModels para la lógica.
