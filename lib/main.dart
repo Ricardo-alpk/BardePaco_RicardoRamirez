@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
           final args = ModalRoute.of(context)?.settings.arguments;
 
           if (args == null || args is! Pedido) {
-            // Manejo de error si los argumentos no son válidos
+            // Manejo de error si los argumentos no son válidoss
             return const Scaffold(
               body: Center(
                 child: Text("Error: Pedido no válido"),
